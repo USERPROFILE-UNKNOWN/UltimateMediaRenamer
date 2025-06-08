@@ -1,0 +1,279 @@
+{
+  "platforms": [
+    {
+      "name": "Instagram_Videos",
+      "folder": "Instagram/Videos",
+      "filename_patterns": [
+        "(?i)^VID_\\d{8,9}_\\d{6}_\\d{3}(?:_\\d+| *\\(\\d+\\))?\\.(?:mp4|mkv|mov)$"
+      ],
+      "metadata_hints": ["Instagram"],
+      "pass": 1
+    },
+    {
+      "name": "Instagram_Pictures",
+      "folder": "Instagram/Pictures",
+      "filename_patterns": [
+        "(?i)^IMG_\\d{8}_\\d{6}_\\d{3}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_IMG_\\d{8}_\\d{6}_\\d{3}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": ["Instagram"],
+      "pass": 1
+    },
+    {
+      "name": "Facebook_Videos",
+      "folder": "Facebook/Videos",
+      "filename_patterns": [
+        "(?i)^FB_VID_\\d+(?: *\\(\\d+\\))?\\.(?:mp4|mkv|mov)$"
+      ],
+      "metadata_hints": ["Facebook"],
+      "pass": 1
+    },
+    {
+      "name": "Facebook_Pictures",
+      "folder": "Facebook/Pictures",
+      "filename_patterns": [
+        "(?i)^FB_IMG_\\d+[~\\d]*(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^FB_IMG_\\d{8}_\\d{6}(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^FB_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_FB_IMG_\\d+[~\\d]*(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_FB_IMG_\\d{8}_\\d{6}(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_FB_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": ["Facebook"],
+      "pass": 1
+    },
+    {
+      "name": "Snapchat_Videos",
+      "folder": "Snapchat/Videos",
+      "filename_patterns": [
+        "(?i)^Snapchat-\\d+(?: *\\(\\d+\\))?\\.(?:mp4|mov|3gp)$",
+        "(?i)^Snapchat-[\\w~'’\\-]+(?: *\\(\\d+\\))?\\.(?:mp4|mov|3gp)$"
+      ],
+      "metadata_hints": ["Snapchat"],
+      "pass": 1
+    },
+    {
+      "name": "Snapchat_Pictures",
+      "folder": "Snapchat/Pictures",
+      "filename_patterns": [
+        "(?i)^Snapchat-\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?(?:-edited)?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Snapchat-[\\w~'’\\-]+(?: - Copy)?(?: *\\(\\d+\\))?(?:-edited)?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_Snapchat-\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_Snapchat-[\\w~'’\\-]+(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": ["Snapchat"],
+      "pass": 1
+    },
+    {
+      "name": "Snapchat_Pictures_Resized",
+      "folder": "Snapchat/Pictures/Resized",
+      "filename_patterns": [
+        "(?i)^Resized_Snapchat-\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_Snapchat-[\\w~'’\\-]+(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": ["Snapchat"],
+      "pass": 2
+    },
+    {
+      "name": "Snapchat_Pictures_Edited",
+      "folder": "Snapchat/Pictures/-edited",
+      "filename_patterns": [
+        "(?i)^Snapchat-\\d+-edited(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Snapchat-[\\w~'’\\-]+-edited(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": ["Snapchat"],
+      "pass": 2
+    },
+    {
+      "name": "Android_Videos",
+      "folder": "Android/Videos",
+      "filename_patterns": [
+        "(?i)^(?!VID_\\d{8}_\\d{6}_\\d{3}_)VID_\\d{8}_\\d{6,9}(?:-\\d+)?(?:_\\d+)?(?: *\\(\\d+\\))?\\.(?:mp4|mkv|mov)$",
+        "(?i)^\\d{8}_\\d{6}(?:_\\d+)?(?: *\\(\\d+\\))?\\.(?:mp4|mkv|mov)$",
+        "(?i)^\\d{8}_\\d{6,9}_\\d{3}(?: *\\(\\d+\\))?\\.(?:mp4|mkv|mov)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Android_Pictures",
+      "folder": "Android/Pictures",
+      "filename_patterns": [
+        "(?i)^IMG_\\d{8}_\\d{6}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^IMG_\\d{8}_\\d{6,9}(?:-edited)?(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^IMG_\\d{8}_\\d{9}_HDR(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^\\d{8}_\\d{6}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^\\d{8}_\\d{6}_\\d{14}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^\\d+_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^\\d{8}_\\d{6}_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^\\d{8}_\\d{6}(?:_\\d+){2,}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^\\d+__[\\w\\-]+_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_IMG_\\d{8}_\\d{6}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_IMG_\\d{8}_\\d{6,9}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_IMG_\\d{8}_\\d{9}_HDR(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d{8}_\\d{6}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d{8}_\\d{6}_\\d{14}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d+_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d{8}_\\d{6}_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d{8}_\\d{6}(?:_\\d+){2,}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d+__[\\w\\-]+_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Android_Pictures_Edited",
+      "folder": "Android/Pictures/-edited",
+      "filename_patterns": [
+        "(?i)^IMG_\\d{8}_\\d{6,9}-edited(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 2
+    },
+    {
+      "name": "Android_Pictures_Resized",
+      "folder": "Android/Pictures/Resized",
+      "filename_patterns": [
+        "(?i)^Resized_IMG_\\d{8}_\\d{6}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_IMG_\\d{8}_\\d{6,9}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_IMG_\\d{8}_\\d{9}_HDR(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d{8}_\\d{6}(?:_\\d+| *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d{8}_\\d{6}_\\d{14}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d+_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d{8}_\\d{6}_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d{8}_\\d{6}(?:_\\d+){2,}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_\\d+__[\\w\\-]+_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 2
+    },
+    {
+      "name": "Android_Pictures_Message",
+      "folder": "Android/Pictures/Message",
+      "filename_patterns": [
+        "(?i)^Message(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Message_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_Message(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_Message_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Android_Pictures_Message_Resized",
+      "folder": "Android/Pictures/Message/Resized",
+      "filename_patterns": [
+        "(?i)^Resized_Message(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_Message_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 2
+    },
+    {
+      "name": "Android_Pictures_Recieved",
+      "folder": "Android/Pictures/recieved",
+      "filename_patterns": [
+        "(?i)^received_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_received_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Android_Pictures_Recieved_Resized",
+      "folder": "Android/Pictures/recieved/Resized",
+      "filename_patterns": [
+        "(?i)^Resized_received_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 2
+    },
+    {
+      "name": "Android_Pictures_Download",
+      "folder": "Android/Pictures/Download",
+      "filename_patterns": [
+        "(?i)^100\\d{7}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Android_Screen_Recording",
+      "folder": "Android/Videos/Screen_Recording",
+      "filename_patterns": [
+        "(?i)^Screen_Recording_\\d{8}[-_]\\d{6}_.+?(?: \\(\\d+\\))?\\.mp4$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Screen_Recording_ByApp",
+      "folder": "Android/Videos/Screen_Recording",
+      "filename_patterns": [
+        "(?i)^Screen_Recording_\\d{8}[-_]\\d{6}_(.+?)(?: *\\(\\d+\\))?\\.mp4$"
+      ],
+      "metadata_hints": [],
+      "pass": 2
+    },
+    {
+      "name": "Android_Screenshot",
+      "folder": "Android/Pictures/Screenshot",
+      "filename_patterns": [
+        "(?i)^Screenshot_\\d{8}[-_]\\d{6}_.+?(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Screenshot_\\d{8}-\\d{6}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Screenshot_\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_Screenshot_\\d{8}[-_]\\d{6}_.+?(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_Screenshot_\\d{8}-\\d{6}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_Screenshot_\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Screenshot_ByApp",
+      "folder": "Android/Pictures/Screenshot",
+      "filename_patterns": [
+        "(?i)^Screenshot_\\d{8}[-_]\\d{6}_(.+?)(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 2
+    },
+    {
+      "name": "Android_Pictures_Resized_Recieved",
+      "folder": "Android/Pictures/recieved/Resized",
+      "filename_patterns": [
+        "(?i)^received_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$",
+        "(?i)^Resized_received_\\d+(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Google_Meet",
+      "folder": "Google/Meet",
+      "filename_patterns": [
+        "(?i)^([0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12})(?: - Copy(?: \\(\\d+\\))?| *\\(\\d+\\))?\\.(?:jpg|jpeg|png|mp4)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Apple_Pictures",
+      "folder": "Apple/Pictures",
+      "filename_patterns": [
+        "(?i)^IMG_\\d{4}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:jpg|jpeg|png)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    },
+    {
+      "name": "Apple_Videos",
+      "folder": "Apple/Videos",
+      "filename_patterns": [
+        "(?i)^IMG_\\d{4}(?: *\\(\\d+\\))?(?: - Copy)?(?: *\\(\\d+\\))?\\.(?:mov|mp4)$"
+      ],
+      "metadata_hints": [],
+      "pass": 1
+    }
+  ]
+}
