@@ -1,0 +1,140 @@
+Windows Registry Editor Version 5.00
+
+; File Context Menus
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.1 - Rename File]]
+@="1. Rename File"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.1 - Rename File]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [1.1 - Rename File].bat\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.2 - Undo Last Rename]]
+@="2. Undo Last Rename"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.2 - Undo Last Rename]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [1.2 - Undo Last Rename].bat\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.3 - Restore Original Filename]]
+@="3. Restore Original Filename"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.3 - Restore Original Filename]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [1.3 - Restore Original Filename].bat\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.4 - Organize File]]
+@="4. Organize File"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.4 - Organize File]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [1.4 - Organize File].bat\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.5 - Restore File Location]]
+@="5. Restore File Location"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.5 - Restore File Location]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [1.5 - Restore File Location].bat\" \"%1\""
+
+; Background Context Menus
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.1 - Batch Rename]]
+@="1. Batch Rename"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.1 - Batch Rename]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [2.1 - Batch Rename].bat\" \"%V\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.2 - Undo Last Batch Rename]]
+@="2. Undo Last Batch Rename"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.2 - Undo Last Batch Rename]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [2.2 - Undo Last Batch Rename].bat\" \"%V\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.3 - Restore Original Filenames]]
+@="3. Restore Original Filenames"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.3 - Restore Original Filenames]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [2.3 - Restore Original Filenames].bat\" \"%V\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.4 - Organize Files]]
+@="4. Organize Files"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.4 - Organize Files]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [2.4 - Organize Files].bat\" \"%V\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.5 - Restore File Locations]]
+@="5. Restore File Locations"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.5 - Restore File Locations]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [2.5 - Restore File Locations].bat\" \"%V\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.6 - Find Duplicates]]
+@="6. Find Duplicates"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.6 - Find Duplicates]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [2.6 - Find Duplicates].bat\" \"%V\""
+
+; Folder Context Menus
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.1 - Batch Rename]]
+@="1. Batch Rename"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.1 - Batch Rename]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [3.1 - Batch Rename].bat\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.2 - Undo Last Batch Rename]]
+@="2. Undo Last Batch Rename"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.2 - Undo Last Batch Rename]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [3.2 - Undo Last Batch Rename].bat\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.3 - Restore Original Filenames]]
+@="3. Restore Original Filenames"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.3 - Restore Original Filenames]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [3.3 - Restore Original Filenames].bat\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.4 - Organize Files]]
+@="4. Organize Files"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.4 - Organize Files]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [3.4 - Organize Files].bat\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.5 - Restore File Locations]]
+@="5. Restore File Locations"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.5 - Restore File Locations]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [3.5 - Restore File Locations].bat\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.6 - Find Duplicates]]
+@="6. Find Duplicates"
+"MultiSelectModel"="Player"
+"Icon"="\"[INSTALL_DIR]\\Registry\\UMR_ContextMenus.ico\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.6 - Find Duplicates]\command]
+@="\"[INSTALL_DIR]\\Batch\\UMR [3.6 - Find Duplicates].bat\" \"%1\""

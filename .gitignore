@@ -1,0 +1,44 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Inno Setup build artifacts
+*.o
+*.res
+*.ident
+Output/
+*.exe # Exclude the installer executable itself, as it's a build artifact
+*.bak # Backup files
+
+# Temporary directories and logs created by the installer/app
+.temp/
+Logs/
+Database/UltimateMediaRenamer.db # SQLite database file
+
+# Operating System Files
+.DS_Store # macOS
+Thumbs.db # Windows thumbnail cache
+desktop.ini # Windows folder customization
+*.lnk # Windows shortcuts
+
+# Python virtual environment (if you decide to use one)
+venv/
+.venv/
+
+# Specific files from the build process or user-specific configuration
+# Exclude the actual compiled installer from the source repository
+UltimateMediaRenamer [v1.0.0] [x64]_Setup.exe
+
+# Ignore the .vscode folder for VS Code settings if you use it and it's user-specific
+.vscode/
+
+# Ensure source files are always included unless explicitly ignored
+!/Batch/
+!/Installer/UltimateMediaRenamer.iss
+!/Installer/UMR_ContextMenus_256.ico
+!/Registry/
+!/Scripts/
+!/Setup/
+!/Tools/Python/
+!/LICENSE.txt
+!/README.txt

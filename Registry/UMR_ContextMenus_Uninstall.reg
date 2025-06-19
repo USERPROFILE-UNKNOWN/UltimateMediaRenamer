@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+; Remove File Context Menus
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.1 - Rename File]]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.2 - Undo Last Rename]]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.3 - Restore Original Filename]]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.4 - Organize File]]
+[-HKEY_CURRENT_USER\Software\Classes\*\shell\UMR [1.5 - Restore File Location]]
+
+; Remove Background Context Menus
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.1 - Batch Rename]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.2 - Undo Last Batch Rename]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.3 - Restore Original Filenames]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.4 - Organize Files]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.5 - Restore File Locations]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\UMR [2.6 - Find Duplicates]]
+
+; Remove Folder Context Menus
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.1 - Batch Rename]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.2 - Undo Last Batch Rename]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.3 - Restore Original Filenames]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.4 - Organize Files]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.5 - Restore File Locations]]
+[-HKEY_CURRENT_USER\Software\Classes\Directory\shell\UMR [3.6 - Find Duplicates]]
